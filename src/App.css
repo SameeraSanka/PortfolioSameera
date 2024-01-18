@@ -28,9 +28,10 @@ nav {
   align-items: center;
   justify-content: space-between;
   min-height: 90px;
-  position: fixed;
+  /* position: fixed;
   top: 0;
   z-index: 1000;
+  background-color: #4c4c4c; */
 }
 
 .navbar-menu-container {
@@ -309,18 +310,55 @@ nav {
   margin: 1rem 0rem;
 }
 .work-section-bottom {
-  margin-top: 5rem;
+  margin-top: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
+
+
+.work-section-item {
+  position: relative;
+  margin: 0 1rem; /* Adjust margin as needed */
+  transition: box-shadow 0.5s ease; /* Add transition for a smoother effect */
+}
+
+
+
+
+.see-more-button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.work-section-item:hover .see-more-button {
+  opacity: 1;
+}
+
 .work-section-info p {
   flex: 1;
   display: flex;
   align-items: center;
   font-weight: 600;
+
 }
+
+.work-section-info {
+  position: relative;
+  transition: box-shadow 0.5s ease; /* Add transition for a smoother effect */
+
+}
+
+.work-section-info:hover {
+  box-shadow: 0  4px 8px rgba(92, 92, 92, 0.8); /* Example box shadow on hover */
+  cursor: pointer; /* Change cursor on hover if you want */
+}
+
 
 .nav-logo-container {
   max-width: 140px;

@@ -1,47 +1,52 @@
 import React from "react";
-import PickMeals from "../Assets/pick-meals-image.png";
-import ChooseMeals from "../Assets/choose-image.png";
-import DeliveryMeals from "../Assets/delivery-image.png";
+import FrontEndDeveloper from "../Assets/1.png";
+import GraphicDesigner from "../Assets/3.png";
+import UIUxDesigner from "../Assets/2.png";
 
 const Work = () => {
   const workInfoData = [
     {
-      image: PickMeals,
-      title: "Pick Meals",
-      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et sagittis duis elementum interdum facilisi bibendum.",
+      image: FrontEndDeveloper,
+      title: "Front End Developer",
+      text: "I design responsive websites for seamless user experiences, prioritizing innovative frontend development.",
     },
     {
-      image: ChooseMeals,
-      title: "Choose How Often",
-      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et ",
+      image: GraphicDesigner,
+      title: "Graphic Designer",
+      text: "I create visually compelling designs, merging creativity with precision to convey impactful messages through graphic elements.",
     },
     {
-      image: DeliveryMeals,
-      title: "Fast Deliveries",
-      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et lorem ipsum",
+      image: UIUxDesigner,
+      title: "UI/Ux Designer",
+      text: "I design intuitive and engaging user interfaces, focusing on user experience to bring digital concepts to life.",
     },
   ];
   return (
     <div className="work-section-wrapper">
       <div className="work-section-top">
-        <p className="primary-subheading">Work</p>
-        <h1 className="primary-heading">How It Works</h1>
+        <h1 className="primary-heading">What I Do</h1>
         <p className="primary-text">
-          Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et
-          elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.
+          "I'm a versatile professional, blending skills as a UI/UX designer,
+          frontend developer, and graphic designer. Crafting digital experiences
+          that seamlessly merge aesthetics with functionality is my passion."
         </p>
       </div>
-      <div className="work-section-bottom">
-        {workInfoData.map((data) => (
-          <div className="work-section-info" key={data.title}>
-            <div className="info-boxes-img-container">
-              <img src={data.image} alt="" />
+      <a href="" style={{ textDecoration: "none" }}>
+        {" "}
+        <div className="work-section-bottom">
+          {workInfoData.map((data) => (
+            <div className="work-section-item" key={data.title}>
+              <div className="work-section-info">
+                <div className="info-boxes-img-container">
+                  <img src={data.image} alt="" />
+                </div>
+                <h2>{data.title}</h2>
+                <p>{data.text}</p>
+              </div>
             </div>
-            <h2>{data.title}</h2>
-            <p>{data.text}</p>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+      </a>
     </div>
   );
 };
