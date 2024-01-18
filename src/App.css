@@ -28,9 +28,17 @@ nav {
   align-items: center;
   justify-content: space-between;
   min-height: 90px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
 }
+
 .navbar-menu-container {
   display: none;
+  padding-left: 175px;
+}
+.navbar-links-container{
+  padding-left: 400px;
 }
 .navbar-links-container a {
   margin-right: 3rem;
@@ -38,6 +46,7 @@ nav {
   color: rgb(255, 153, 0);
   font-size: 1.1rem;
   font-weight: 600;
+
 }
 .primary-button {
   padding: 0.9rem 1.75rem;
@@ -89,8 +98,14 @@ nav {
   /* line-height: 5rem; */
   max-width: 600px;
 }
+.primary-heading2 {
+  font-size: clamp(rem, 5vw, 4rem);
+  color: #4c4c4c;
+  /* line-height: 5rem; */
+  max-width: 600px;
+}
 .primary-text {
-  font-size: clamp(1rem, 3vw, 1.5rem);
+  font-size: clamp(0.5rem, 3vw, 1rem);
   max-width: 500px;
   color: #6a6a6a;
   margin: 1.5rem 0rem;
@@ -305,6 +320,10 @@ nav {
   display: flex;
   align-items: center;
   font-weight: 600;
+}
+
+.nav-logo-container {
+  max-width: 140px;
 }
 
 @media (max-width: 1000px) {

@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
-
+import Logo from '../Assets/Logo.svg'
 import { HiOutlineBars3 } from "react-icons/hi2";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
@@ -43,7 +43,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className="nav-logo-container">
-
+      <img src={Logo} alt="" />
       </div>
       <div className="navbar-links-container">
         <a href="">Home</a>
@@ -51,7 +51,7 @@ const Navbar = () => {
         <a href="">Testimonials</a>
         <a href="">Contact</a>
 
-        <button className="primary-button">Contact me</button>
+        <button className="primary-button">Contact me </button>
       </div>
       <div className="navbar-menu-container">
         <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
